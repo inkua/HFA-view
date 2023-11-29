@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Human Front Aid -</title>
+    <link rel="icon" type="image/x-icon" href="./img/Layout/logo.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome v6.4.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap v5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous">
+    </script>
+
+    <!-- JQuery v3.6.4 -->
+    <script defer src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+    <!-- JavaScript -->
+    <script defer src="./js/carousel.js"></script>
+    <script defer src="./js/carouselPressAndNews.js"></script>
+    <script defer src="./js/apimap.js"></script>
+    <script defer src="./js/swiper-supporters.js"></script>
+    <script defer src="./js/chatbot.js"></script>
+    <script defer src="./js/language/language.js"></script>
+    
+    <!-- VideoJS -->
+    <link href="https://vjs.zencdn.net/8.5.2/video-js.css" rel="stylesheet" />
+    <script defer src="https://vjs.zencdn.net/8.5.2/video.min.js"></script>
+
+    <!-- SwiperJS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    
+    <!-- Estilos CSS3 -->
+    <link rel="stylesheet" href="./css/general-styles.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body data-section="index">
+
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■■ INICIO HEADER ■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- │                                                         │ -->
+    <!-- │   COLABORADORES:                                        │ -->
+    <!-- │ ► Diego N. Cabrera                                      │ -->
+    <!-- │ ► Luis Romano                                           │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
+
+    <header class="desktop">
+
+        <!--  Header - Sección Navbar  -->
+
+        <div class="navbar-contenedor-principal">
+
+            <nav class="navbar navbar-expand bg-body-tertiary navbar-mobile">
+
+                <!--  Contenedor del Navbar  -->
+
+                <div class="container-fluid navbar-contenedor">
+
+                    <!--  Logo  -->
+                    <img class="navbar-brand navbar-logo" src="./img/Layout/header_logo.png" alt="">
+
+                    <!--  Título  -->
+                    <a class="navbar-brand navbar-titulo nav-effect" href="./index.html">Human Front Aid</a>
+
+                    <!--  Opciones de Navegación  -->
+                    <div class="collapse navbar-collapse navbar-contenido" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ms-auto">
+                            <a class="nav-link navbar-link navbar-home nav-effect" href="./index.html" data-translate="home" >Home</a>
+                            <a class="nav-link navbar-link navbar-about-us nav-effect" href="./pages/about-us.html" data-translate="about" >About us</a>
+                            
+                            <a 
+                            class="
+                                btn btn-primary 
+                                navbar-need-help
+                                nav-btn-effect-01
+                                " 
+                            href="./pages/need-help.html" 
+                            data-translate="needHelp">
+                                Need help?
+                            </a>
+                            
+                            <a class="
+                                btn btn-warning 
+                                navbar-donate
+                                nav-btn-effect-02
+                                " 
+                                href="./pages/donate.html" 
+                                data-translate="DONATE">
+                                    DONATE
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!--  Header - Sección idiomas  -->
+
+            <div class="navbar navbar-expand bg-body-tertiary">
+
+                <div class="container-fluid contenedor-idiomas">
+
+                    <div class="collapse navbar-collapse navbar-contenido" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ms-auto">
+
+                            <!-- Opción Ukrania -->
+                            <button 
+                                type="button" 
+                                onclick="changeLanguage('language_uc_data'); return false;" 
+                                class="
+                                    btn 
+                                    btn-primary 
+                                    navbar-ykp
+                                    nav-btn-effect-03">
+                                        YKP
+                            </button>
+                            <!-- Opción Inglés -->
+                            <button 
+                                type="button" 
+                                onclick="changeLanguage('language_en_data'); return false;" 
+                                class="
+                                    btn 
+                                    btn-warning 
+                                    navbar-en
+                                    nav-btn-effect-02">
+                                        EN
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--  Header - Sección Título  -->
+
+            <div class="header-div">
+                <h2 class="header-titulo">Human Front Aid</h2>
+                <p class="header-subtitulo" data-translate="headerSubtitle1">
+                    Our intention is to <strong data-translate="headerSubtitleStrong">support projects regionally and locally.</strong></p><p class="header-subtitulo" data-translate="headerSubtitle2">
+                    People knowing the local conditions can help.
+                </p>
+                <a class="home-btn" href="./pages/donate.html" data-translate="DONATE">DONATE</a>
+            </div>
+
+            <!--  Header - Sección Backgrond  -->
+            
+            <!--  Imagen de fondo  -->
+
+            <img class="header-background-imagen" src="./img/backgrounds/bg-home-desktop.png" alt="home_img">
+
+            <!--  Máscara de filtro azul  -->
+
+            <div class="header-background-mascara"></div>
+
+            <!--  Efecto wave  -->
+
+            <img class="wave" src="./img/Layout/wave.png" alt="" />
+        
+        </div>
+
+    </header>
+
+    <!-- Header Mobile Version -->
+
+    <header class="mobile">
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary mobile-navbar-container">
+            <div class="container-fluid">
+
+                <!-- Navbar - Menu options -->
+
+                <a class="nav-link dropdown-toggle-nav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="./img/Layout/menuphone.png"/>
+                </a>
+                <ul class="dropdown-menu dropdown-navigation">
+                    <li><a class="dropdown-item dropdown-item-nav" href="./index.html" data-translate="home">Home</a></li>
+                    <li><a class="dropdown-item dropdown-item-nav" href="./pages/about-us.html"data-translate="about" >About us</a></li>
+                    <li><a class="dropdown-item dropdown-item-nav" href="./pages/need-help.html"data-translate="needHelp" >Need Help</a></li>
+                    <li><a class="dropdown-item dropdown-item-nav" href="./pages/donate.html"data-translate="donate" >Want to Help</a></li>
+                </ul>
+
+                <!-- Navbar - Languages options -->
+
+                <a class="nav-link dropdown-toggle-lang" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="./img/Layout/carbon_overflow-menu-vertical.png"/>
+                </a>
+                <ul class="dropdown-menu dropdown-languages">
+                    <li><a class="dropdown-item" onclick="changeLanguage('language_en_data'); return false;" class="btn btn-warning navbar-en" href="#">English</a></li>
+                    <li><a class="dropdown-item" onclick="changeLanguage('language_uc_data'); return false;" class="btn btn-primary navbar-ykp" href="#">Ukrainian</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Header - Optiones -->
+
+        <div class="container-fluid header-options">
+            <div class="header-options-cuadro">
+                <a class="option-donate" href="./pages/donate.html" data-translate="donate">Donate</a>
+                <a class="option-need-help" href="./pages/need-help.html" data-translate="needHelp">Need Help?</a>
+            </div>
+        </div>
+
+
+        <!-- Header - Encabezado con títulos -->
+
+        <div class="tittles-container">
+
+            <!-- Header - Background image -->
+
+            <img class="bg-home-mobile" src="./img/backgrounds/bg-home-mobile.png" alt="home_img">
+
+            <!--  Máscara de filtro azul  -->
+
+            <div class="header-background-mascara"></div>
+
+            <!--  Efecto wave  -->
+            
+            <img class="wave-mobile" src="./img/Layout/wave.png" alt="" />
+
+            <div class="titulos">
+                <h2 class="header-titulo">Human Front Aid</h2>
+                <p class="header-subtitulo"data-translate="headerSubtitle1" >
+                    Our intention is to <strong data-translate="headerSubtitleStrong" >support projects regionally and locally.</strong></p>
+                <p class="header-subtitulo"data-translate="headerSubtitle2" >
+                    People knowing the local conditions can help.
+                </p>
+                <a class="home-btn" href="./pages/donate.html" data-translate="DONATE" >DONATE</a>
+            </div>
+            
+
+        </div>
+
+    </header>
+
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■■■ FIN HEADER ■■■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
+
+
+
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■■ INICIO CHATBOT ■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- │                                                         │ -->
+    <!-- │   COLABORADORES:                                        │ -->
+    <!-- │ ► Diego N. Cabrera                                      │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
+
+    <button class="chatbot-button" onclick="openChat()">
+    </button>
+
+    <div id="chatbot-ventana-container">
+
+        <i class="fa-solid fa-circle-xmark chatbot-closeicon" onclick="closeChat()"></i>
+
+        <div class="chatbot-seccionchat">
+
+            <!-- Los puntitos de escribir del bot -->
+            <p id="waitingBuble" class="chatbot-messagewaiting msg">
+                <i class="fa-solid fa-circle waiting-circle"></i>
+                <i class="fa-solid fa-circle waiting-circle"></i>
+                <i class="fa-solid fa-circle waiting-circle"></i>
+            </p>
+
+            <!-- Primer mensaje del bot -->
+            <p class="chatbot-messagebot msg">
+                Hello, I am a bot made to help and answer your questions.
+            </p>
+
+            <!-- Preguntas Pre-determinadas -->
+            <p id="question04" class="chatbot-messagechoose" onclick="anserMessage(this)">Who built this website?</p>
+            <p id="question03" class="chatbot-messagechoose" onclick="anserMessage(this)">Where is the organization located?</p>
+            <p id="question02" class="chatbot-messagechoose" onclick="anserMessage(this)">Who is the founder?</p>
+            <p id="question01" class="chatbot-messagechoose" onclick="anserMessage(this)">Where do the donations go?</p>
+        </div>
+
+        <div class="chatbot-seccionwrite" onclick="chooseMessage()">
+            <div class="chatbot-seccionchoose">
+                <p class="chatbot-choosetext">Choose a message</p>
+                <img class="chatbot-chooseicon send" src="./img/chatbot/send.png"/>
+                <img class="chatbot-chooseicon mood" src="./img/chatbot/mood.png"/>
+            </div>
+        </div>
+    </div>
+
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■■■ FIN CHATBOT ■■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
+
+    
+
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■ INICIO ABOUT-US ■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- │                                                         │ -->
+    <!-- │   COLABORADORES:                                        │ -->
+    <!-- │ ► Luis Fernando Callisaya Surco                         │ -->
+    <!-- │ ► Diego N. Cabrera                                      │ -->
+    <!-- │ ► Diego Valentino Pardo Yepez                           │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
+
+
+    <section class="about-us">
+
+        <!-- About Us - Sección Texto -->
+
+        <section class="about-us-texto box-about-us">
+
+            <p  data-translate="sectionAboutUsP1">
+                Our intention is to support projects regionally and locally.
+                People knowing the local conditions can help effectively by
+                adapting to the situation on ground immediately. They know
+                best what is required at any moment, and we believe this is
+                a reassurance that the resources are used in the best way possible.
+            </p>
+            <p data-translate="sectionAboutUsP2">
+                We will continue supporting on-going projects as long as it’s
+                needed. At the same time, we have all ears and eyes open for
+                new ways of supporting as directly as we can, wherever it is.
+                We find this crucial in order to stay open to new possibilities
+                of helping in the most effective manner.
+            </p>
+            <div class="about-btnBox">
+                <a class="about-us-texto-button" href="./pages/about-us.html" data-translate="about" type="button">About us</a>
+            </div>
+            
+
+        </section>
+
+        <!-- About Us - Sección image -->
+
+        <img class="about-us-image-imagen" src="./img/home-about-us.png" alt="About_us">
+
+    </section>
+
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■■ FIN ABOUT-US ■■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
+    
+
+
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■ INICIO PATRONS ■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- │                                                         │ -->
+    <!-- │   COLABORADORES:                                        │ -->
+    <!-- │ ► Diego N. Cabrera                                      │ -->
+    <!-- │ ► Vania Belén Carlos Camones                            │ -->
+    <!-- │ ► Manuel Florez                                         │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
+    
+    <!-- Patrons - Sección Título -->
+
+    <div class="contenttitles contenttitles_patrons">
+        <h3 
+            class="contenttitles__h3" 
+            data-translate='sectionPatronsTittle'
+        >
+            Patrons
+        </h3>
+    </div>
+
+    <!-- Patrons - Sección Carousel -->
+
+    <div class="Carrousel">
+        <div class="swiper swiper-p mySwiperP">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide swiper-slide-p">
+                    <div class="memberCard-one">
+
+                        <video id="my-video" class="card-video video-js vjs-default-skin" controls preload="auto" 
+                        poster="./img/patrons/video-preload.png" data-setup="{}" height="100%">
+
+                        <source src="./video/VID-20221107-WA0019.mp4" class="member-video img-fluid card-video video-js" controls id="my-video"  data-setup="{}" type="video/mp4">
+                        <p class="vjs-no-js">
+                            To view this video please enable JavaScript, and consider upgrading to a
+                            web browser that
+                            <a href="https://videojs.com/html5-video-support/" target="_blank">
+                                supports HTML5 video</a>
+
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide-p">
+                    <div class="memberCard" >
+                        <div class="memberImage" style="background-image: url('./img/patrons/card-Reto.png');">
+                            <a class="memberMoreInfo" target="_blank">
+                                <i class="fa-solid fa-plus"></i>
+                            </a>
+                        </div>
+                        <div class="memberContent">
+                            <p class="memberName">Reto Nause</p>
+                            <p class="memberInfo">Gemeinderat Stadt Bern Director für Sicherheit, Umwelt und Energie </p>
+                            <p class="memberorg">Die Mitte</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide-p">
+                    <div class="memberCard">
+                        <div class="memberImage" style="background-image: url('./img/patrons/card-Kathrin.png');">
+                            <a class="memberMoreInfo"  target="_blank">
+                                <i class="fa-solid fa-plus"></i>
+                            </a>
+                        </div>
+                        <div class="memberContent">
+                            <p class="memberName">Kathrin Bertschy</p>
+                            <p class="memberInfo">Nationalrätin <br>Kanton Bern</p>
+                            <p class="memberorg">GLP</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide-p">
+                    <div class="memberCard" >
+                        <div class="memberImage" style="background-image: url('./img/patrons/card-Matthias.png');">
+                            <a class="memberMoreInfo"  target="_blank">
+                                <i class="fa-solid fa-plus"></i>
+                            </a>
+                        </div>
+                        <div class="memberContent">
+                            <p class="memberName">Matthias Aebischer</p>
+                            <p class="memberInfo">Nationalrat <br>Kanton Bern  </p>
+                            <p class="memberorg">SP</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide-p">
+                    <div class="memberCard">
+                        <div class="memberImage" style="background-image: url('./img/patrons/card-Gerhard.png');">
+                            <a class="memberMoreInfo"  target="_blank">
+                                <i class="fa-solid fa-plus"></i>
+                            </a>
+                        </div>
+                        <div class="memberContent">
+                            <p class="memberName">Gerhard Pfister</p>
+                            <p class="memberInfo">Nationalrat <br>Kanton Zug </p>
+                            <p class="memberorg">Die Mitte</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide-p">
+                    <div class="memberCard" >
+                        <div class="memberImage" style="background-image: url('./img/patrons/card-beatrice.png');">
+                            <a class="memberMoreInfo"  target="_blank">
+                                <i class="fa-solid fa-plus"></i>
+                            </a>
+                        </div>
+                        <div class="memberContent">
+                            <p class="memberName">Beatrice Simone-Jungi</p>
+                            <p class="memberInfo">Ehem. <br> Regierungsrätin <br> Finanzdirektion
+                                </p>
+                            <p class="memberorg">Kanton Bern</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide-p">
+                    <div class="memberCard">
+                        <div class="memberImage" style="background-image: url('./img/patrons/card-Bernd.png');">
+                            <a class="memberMoreInfo"  target="_blank">
+                                <i class="fa-solid fa-plus"></i>
+                            </a>
+                        </div>
+                        <div class="memberContent">
+                            <p class="memberName">Bernd Schildger</p>
+                            <p class="memberInfo">Ehem. Direktor</p>
+                            <p class="memberorg">Tierpark Bern</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide-p">
+                    <div class="memberCard" >
+                        <div class="memberImage" style="background-image: url('./img/patrons/card-Wanja.png');">
+                            <a class="memberMoreInfo"  target="_blank">
+                                <i class="fa-solid fa-plus"></i>
+                            </a>
+                        </div>
+                        <div class="memberContent">
+                            <p class="memberName">Wanja Greuel</p>
+                            <p class="memberInfo">COE, BSC Young Boys </p>
+                            <p class="memberorg">Reto Nause</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <script>
+
+        var swiperP = new Swiper(".mySwiperP", {
+            slidesPerView: "auto",
+            spaceBetween: 10,
+            autoplay: {
+                delay: 4000,
+            },
+            speed: 800,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+
+    </script>
+    
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■■■ FIN PATRONS ■■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
+
+
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■ INICIO SUPPORTERS ■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- │                                                         │ -->
+    <!-- │   COLABORADORES:                                        │ -->
+    <!-- │ ► Federico Manuel Peralta                               │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
+
+    
+    <div class="contenttitles">
+        <h3 
+            class="contenttitles__h3"
+            data-translate="sectionSupportersTittle"
+        >
+            Supporters
+        </h3>
+    </div>
+
+    <div class="swiper swiperSupporters">
+        <div class="swiper-wrapper">
+
+            <a class="swiper-slide slideSupporters" href="https://bristol-hotel.com.ua/" target="_blank">
+                <img class="img-supporters" src="./img/supporters/hotelodessa.jpg" class="img-fluid rounded-start" alt="...">
+                <div class="text-supporters"><h5>Bristol Hotel  <br> Odessa</h5></div>
+            </a>
+
+            <a class="swiper-slide slideSupporters" href="https://www.instagram.com/enoteca.old_oak/" target="_blank">
+                <img class="img-supporters" src="./img/supporters/oldoak.jpg" class="img-fluid rounded-start" alt="...">
+                <div class="text-supporters"><h5>Old Oak   <br> wine & more</h5></div>
+            </a>
+
+            <a class="swiper-slide slideSupporters" href="https://www.salatundsandwich.ch/" target="_blank">
+                <img class="img-supporters" src="./img/supporters/salsasalat.jpg" class="img-fluid rounded-start" alt="...">
+                <div class="text-supporters"><h5>Salsa<br>Salat & Sandwich</h5></div>
+            </a>
+
+            <a class="swiper-slide slideSupporters" href="https://www.fourtwenty.ch" target="_blank">
+                <img class="img-supporters" src="./img/supporters/fourtwenty.jpg" class="img-fluid rounded-start" alt="...">
+                <div class="text-supporters"><h5>Fourtwenty  </h5></div>
+            </a>
+
+            <a class="swiper-slide slideSupporters" href="https://www.amana-hair.ch/" target="_blank">
+                <img class="img-supporters" src="./img/supporters/amanahair.jpg" class="img-fluid rounded-start" alt="...">
+                <div class="text-supporters"><h5>Amana<br> amana hair</h5></div>
+            </a>
+
+            <a class="swiper-slide slideSupporters" href="https://www.rotary1980.ch" target="_blank">
+                <img class="img-supporters" src="./img/supporters/rotary1980.jpg" class="img-fluid rounded-start" alt="...">
+                <div class="text-supporters"><h5>Rotary  <br> distrikt 1980</h5></div>
+            </a>
+
+            <a class="swiper-slide slideSupporters" href="https://ukrainejapan.org/support_bus/" target="_blank">
+                <img class="img-supporters" src="./img/supporters/supportbus.jpg" class="img-fluid rounded-start" alt="...">
+                <div class="text-supporters"><h5>Ukraine Japan <br> support bus</h5></div>
+            </a>
+
+            <a class="swiper-slide slideSupporters" href="https://www.hoststar.ch/de" target="_blank">
+                <img class="img-supporters" src="./img/supporters/hoststar.jpg" class="img-fluid rounded-start" alt="...">
+                <div class="text-supporters"><h5>Hoststar  <br> Go live</h5></div>
+            </a>
+
+            <a class="swiper-slide slideSupporters" href="https://baze.ch/" target="_blank">
+                <img class="img-supporters" src="./img/supporters/Baze.jpg" class="img-fluid rounded-start" alt="...">
+                <div class="text-supporters"><h5>Baze</h5></div>
+            </a>
+
+            <a class="swiper-slide slideSupporters" href="https://www.sp-bern.ch/personen/parteileitung" target="_blank">
+                <img class="img-supporters" src="./img/supporters/sp.jpg" class="img-fluid rounded-start" alt="...">
+                <div class="text-supporters"><h5>SP <br> der Stadt Bern</h5></div>
+            </a>
+
+            <a class="swiper-slide slideSupporters" href="https://righetti-partner.com/" target="_blank">
+                <img class="img-supporters" src="./img/supporters/righetti.jpg" class="img-fluid rounded-start" alt="...">
+                <div class="text-supporters"><h5>Claudio Righetti <br> Stadtrat</h5></div>
+            </a>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    
+
+      <!-- Initialize Swiper -->
+    <script>
+        
+    </script>
+
+
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■ FIN SUPPORTERS ■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
+
+
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■ INICIO PRESS-AND-NEWS ■■■■■■■■■■■■■■■■ │ -->
+    <!-- │                                                         │ -->
+    <!-- │   COLABORADORES:                                        │ -->
+    <!-- │ ► Luis Romano                                           │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
+
+    <!-- Swiper -->
+
+    <div class="contenttitles">
+        <h3 
+            class="contenttitles__h3"
+            data-translate="SwiperPressAndNews"
+        >
+            Press and News
+        </h3>
+    </div>
+    
+    <div class="swiper swiperPressAndNews">
+        <div class="swiper-wrapper swiper-wrapper-pan">
+
+            <a  
+                class="swiper-slide swiper-slide-pan" 
+                href="https://www.baerntoday.ch/bern/darum-unterstuetzt-reto-nause-berner-helfer-bei-der-spendensuche-150309138" 
+                target="_blank"
+            >
+                <img class="swiper-slide-img" src="./img/pressAndNews/press-and-news-1.png" alt="">
+                <div class="swiper-slide-btn"><p>→</p></div>
+            </a>
+
+            <a  
+                class="swiper-slide swiper-slide-pan" 
+                href="https://www.nau.ch/news/europa/ukraine-krieg-hier-denkt-keiner-daran-dass-wir-verlieren-konnten-66428857" 
+                target="_blank"
+            >
+                <img class="swiper-slide-img" src="./img/pressAndNews/press-and-news-2.png" alt="">
+                <div class="swiper-slide-btn">→</div>
+            </a>
+
+            <a  
+                class="swiper-slide swiper-slide-pan" 
+                href="https://baernerbaer.ch/portraits/ich-nehme-diesen-krieg-persoenlich/" 
+                target="_blank"
+            >
+                <img class="swiper-slide-img" src="./img/pressAndNews/press-and-news-3.png" alt="">
+                <div class="swiper-slide-btn">→</div>
+            </a>
+
+            <a  
+                class="swiper-slide swiper-slide-pan" 
+                href="https://www.aargauerzeitung.ch/international/ukraine-konflikt-der-krieg-tobte-in-mir-reportage-aus-dem-groessten-freiwilligencenter-der-ukraine-in-odessa-ld.2328453?reduced=true" 
+                target="_blank"
+            >
+                <img class="swiper-slide-img" src="./img/pressAndNews/press-and-news-4.png" alt="">
+                <div class="swiper-slide-btn">→</div>
+            </a>
+
+            <a  
+                class="swiper-slide swiper-slide-pan" 
+                href="https://www.nau.ch/news/videos/ukraine-krieg-gefluchtete-schlafen-nur-drei-stunden-pro-nacht-66126580" 
+                target="_blank"
+            >
+                <img class="swiper-slide-img" src="./img/pressAndNews/press-and-news-5.png" alt="">
+                <div class="swiper-slide-btn">→</div>
+            </a>
+
+            <a  
+                class="swiper-slide swiper-slide-pan" 
+                href="https://www.blick.ch/ausland/der-berner-musiker-baenz-margot-44-hilft-im-armen-moldawien-ukrainischen-fluechtlingen-sie-verehren-uns-hier-wie-goetter-id17365356.html?utm_medium=social&utm_campaign=share-button&utm_source=whatsapp" 
+                target="_blank"
+            >
+                <img class="swiper-slide-img" src="./img/pressAndNews/press-and-news-6.png" alt="">
+                <div class="swiper-slide-btn">→</div>
+            </a>
+
+            <a 
+                class="swiper-slide swiper-slide-pan" 
+                href="https://www.telebaern.tv/telebaern-news/berner-rettet-fluechtlinge-aus-der-ukraine-146097989" 
+                target="_blank"
+            >
+                <img class="swiper-slide-img" src="./img/pressAndNews/press-and-news-7.png" alt="">
+                <div class="swiper-slide-btn">→</div>
+            </a>
+
+            <a 
+                class="swiper-slide swiper-slide-pan" 
+                href="https://www.bernerzeitung.ch/ein-berner-leistet-hilfe-an-vorderster-front-313233754380" 
+                target="_blank"
+            >
+                <img class="swiper-slide-img" src="./img/pressAndNews/press-and-news-8.png" alt="">
+                <div class="swiper-slide-btn">→</div>
+            </a>
+
+            <a 
+                class="swiper-slide swiper-slide-pan" 
+                href="https://www.swissinfo.ch/ger/briefing/heute-in-der-schweiz/47527078" 
+                target="_blank"
+            >
+                <img class="swiper-slide-img" src="./img/pressAndNews/press-and-news-9.png" alt="">
+                <div class="swiper-slide-btn">→</div>
+            </a>
+
+            <a 
+                class="swiper-slide swiper-slide-pan" 
+                href="https://www.20min.ch/story/berner-musiker-evakuiert-ukrainerinnen-und-ukrainer-aus-odessa-235788657968" 
+                target="_blank"
+            >
+                <img class="swiper-slide-img" src="./img/pressAndNews/press-and-news-10.png" alt="">
+                <div class="swiper-slide-btn">→</div>
+            </a>
+            
+            <a 
+                class="swiper-slide swiper-slide-pan" 
+                href="https://www.instagram.com/tv/CdLWwWFKCPF/?igshid=YmMyMTA2M2Y%3D" 
+                target="_blank"
+            >
+                <img class="swiper-slide-img" src="./img/pressAndNews/press-and-news-11.png" alt="">
+                <div class="swiper-slide-btn">→</div>
+            </a>
+
+            <a 
+                class="swiper-slide swiper-slide-pan" 
+                href="https://www.baerntoday.ch/bern/darum-unterstuetzt-reto-nause-berner-helfer-bei-der-spendensuche-150309138" 
+                target="_blank"
+            >
+                <img class="swiper-slide-img" src="./img/pressAndNews/press-and-news-12.png" alt="">
+                <div class="swiper-slide-btn">→</div>
+            </a>
+
+            <a 
+                class="swiper-slide swiper-slide-pan" 
+                href="https://www.presseportal-schweiz.ch/pressemeldungen/rakete-trifft-volounteer-center-human-front-aid-odessa" 
+                target="_blank"
+            >
+                <img class="swiper-slide-img" src="./img/pressAndNews/press-and-news-13.png" alt="">
+                <div class="swiper-slide-btn">→</div>
+            </a>
+
+            <a 
+                class="swiper-slide swiper-slide-pan" 
+                href="https://www.baerntoday.ch/bern/stadt-bern/stadt-bern-spendet-25000-franken-an-opfer-des-khachowka-dammbruchs-152269351" 
+                target="_blank"
+            >
+                <img class="swiper-slide-img" src="./img/pressAndNews/press-and-news-14.png" alt="">
+                <div class="swiper-slide-btn">→</div>
+            </a>
+
+        </div>
+        <div class="swiper-pagination swiper-pagination-pan indicator"></div>
+    </div>  
+      
+
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■ FIN PRESS-AND-NEWS ■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
+
+
+
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■■■ INICIO MAP ■■■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- │                                                         │ -->
+    <!-- │   COLABORADORES:                                        │ -->
+    <!-- │ ► Diego N. Cabrera                                      │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
+    
+    <iframe id="map" src="https://liveuamap.com" scrolling="no"></iframe>
+
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■■■■ FIN MAP ■■■■■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
+
+
+
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■■ INICIO FOOTER ■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- │                                                         │ -->
+    <!-- │   COLABORADORES:                                        │ -->
+    <!-- │ ► Diego Valentino Pardo Yepez                           │ -->
+    <!-- │ ► Santiago Elias Carranza                               │ -->
+    <!-- │ ► Manuel Esteban Florez Lopez                           │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
+
+    <footer>
+        <section class="footer-mobile" role="landmark">
+            <div class="footer-column-one">
+                <div class="footer-sm-box" role="list">
+                    <a class="footer-sm-item" role="listitem" href="https://www.instagram.com/humanfrontaid/" target="_blank">
+                        <img src="./img/Layout/ig_logo.png" alt="instagram logo" class="footer-logo-sm">
+                    </a>
+                    <a class="footer-sm-item" role="listitem" href="https://www.facebook.com/HUMANFRONTAID/" target="_blank">
+                        <img src="./img/Layout/fb_logo.png" alt="facebook logo" class="footer-logo-sm">
+                    </a>
+                    <a class="footer-sm-item" role="listitem" href="https://wa.me/+41335333344" target="_blank">
+                        <img src="./img/Layout/wpp_logo.png" alt="whatsapp logo" class="footer-logo-sm">
+                    </a>
+                </div>
+                <div class="footer-logo-box">
+                    <div class="footer-logo-img"></div>
+                    <span class="footer-span">Human Front Aid</span>
+                </div>
+            </div>
+            
+            <div class="footer-column-two">
+                <a class="footer-donate-btn nav-btn-effect-02" type="btn" href="./pages/donate.html" data-translate='DONATE'>DONATE</a>
+                <a class="footer-need-btn nav-btn-effect-01" type="btn" href="./pages/need-help.html" data-translate='needHelp'>Need Help?</a>
+            </div>
+        </section>
+
+        <section class="footer-desktop" role="landmark">
+            <div class="footer-sm-box" role="list">
+                <a class="footer-sm-item" role="listitem" href="https://wa.me/+41335333344" target="_blank">
+                    <img src="./img/Layout/wpp_logo.png" alt="whatsapp logo" class="footer-logo-sm">
+                    <span class="footer-span-logo">Whatsapp</span>
+                </a>
+                <a class="footer-sm-item" role="listitem" href="https://www.instagram.com/humanfrontaid/" target="_blank">
+                    <img src="./img/Layout/ig_logo.png" alt="instagram logo" class="footer-logo-sm">
+                    <span class="footer-span-logo">Instagram</span>
+                </a>
+                <a class="footer-sm-item" role="listitem" href="https://www.facebook.com/HUMANFRONTAID/" target="_blank">
+                    <img src="./img/Layout/fb_logo.png" alt="facebook logo" class="footer-logo-sm">
+                    <span class="footer-span-logo">Facebook</span>
+                </a>
+            </div>
+            <hr class="footer-hr"></hr>
+            <nav class="footer-nav">
+                <ul class="footer-nav-ul">
+                    <li class="footer-nav-li">
+                        <div class="footer-logo-img"></div>
+                        <span class="footer-span nav-effect">Human Front Aid</span>
+                    </li>
+                    <li class="footer-nav-li">
+                        <a class="footer-home-btn nav-effect" href="#" data-translate='home'>Home</a>
+                    </li>
+                    <li class="footer-nav-li">
+                        <a class="footer-about-btn nav-effect" href="./pages/about-us.html" data-translate='about'>About us</a>
+                    </li>
+                    <li class="footer-nav-li">
+                        <a class="footer-need-btn nav-btn-effect-01" href="./pages/need-help.html" type="btn" data-translate='needHelp'>Need help?</a>
+                    </li>
+                    <li class="footer-nav-li">
+                        <a class="footer-donate-btn nav-btn-effect-02" href="./pages/donate.html"type="btn" data-translate='DONATE'>DONATE</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </footer>
+
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■■■ FIN FOOTER ■■■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
+
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■■ EXTRA EFFECTS ■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- │                                                         │ -->
+    <!-- │   COLABORADORES:                                        │ -->
+    <!-- │ ► Diego N. Cabrera                                      │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
+
+    <div id="focus"></div>
+
+    <!-- ┌─────────────────────────────────────────────────────────┐ -->
+    <!-- │ ■■■■■■■■■■■■■■■■■■■■ EXTRA EFFECTS ■■■■■■■■■■■■■■■■■■■■ │ -->
+    <!-- └─────────────────────────────────────────────────────────┘ -->
+
+</body>
+</html>
