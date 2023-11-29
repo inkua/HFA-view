@@ -1,0 +1,556 @@
+/* ┌─────────────────────────────────────────────────────────┐ */
+/* │ ■■■■■■■■■■■■■■■■■■■■ INICIO HEADER ■■■■■■■■■■■■■■■■■■■■ │ */
+/* │                                                         │ */
+/* │   COLABORADORES:                                        │ */
+/* │ ► Diego N. Cabrera                                      │ */
+/* │ ► Luis Romano                                           │ */
+/* │ ► Federico Peralta                                      │ */
+/* └─────────────────────────────────────────────────────────┘ */
+
+/*  Header - Sección Navbar  */
+
+header {
+    height: 970px;
+}
+
+/*  Header - Sección Títulos  */
+
+.header-titulo {
+    width: 90%;
+}
+
+.header-subtitulo {
+    width: 600px;
+    height: 121px;
+    text-align: justify;
+}
+
+/* Header - Sección Donaciones */
+
+.boton-qr {
+    display: inline-block;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 9rem;
+    height: 9rem;
+}
+
+.imagen-qr {
+    margin-left: 120px;
+    width: 30%;
+    height: 30%;
+    max-width: 340px;
+    max-height: 340px;
+    margin-top: -340px;
+}
+
+/*ICONS BOTONS*/
+
+.icono-paypal-unactive {
+    content: url(../img/donate/icon-paypal-disabled.jpg);
+}
+
+.icono-twint-unactive {
+    content: url(../img/donate/icon-twint-disabled.jpg);
+}
+
+.icono-zahlteil-unactive {
+    content: url(../img/donate/icon-zahlteil-disabled.jpg);
+}
+
+.icono-paypal-unactive:hover {
+    cursor: pointer;
+    content: url(../img/donate/icon-paypal-enabled.jpg);
+}
+
+.icono-twint-unactive:hover {
+    cursor: pointer;
+    content: url(../img/donate/icon-twint-enabled.jpg);
+}
+
+.icono-zahlteil-unactive:hover {
+    cursor: pointer;
+    content: url(../img/donate/icon-zahlteil-enabled.jpg);
+}
+
+.icono-paypal-active {
+    content: url(../img/donate/icon-paypal-enabled.jpg);
+}
+
+.icono-twint-active {
+    content: url(../img/donate/icon-twint-enabled.jpg);
+}
+
+.icono-zahlteil-active {
+    content: url(../img/donate/icon-zahlteil-enabled.jpg);
+}
+
+.donate-active {
+    -webkit-box-shadow: 0px 0px 10px 5px var(--color-tres);
+    -moz-box-shadow: 0px 0px 10px 5px var(--color-tres);
+    box-shadow: 0px 0px 10px 5px var(--color-tres);
+}
+
+.donate-active:hover {
+    -webkit-box-shadow: 0px 0px 10px 5px var(--color-tres);
+    -moz-box-shadow: 0px 0px 10px 5px var(--color-tres);
+    box-shadow: 0px 0px 10px 5px var(--color-tres);
+}
+
+/* ┌─────────────────────────────────────────────────────────┐ */
+/* │ ■■■■■■■■■■■■■■■■■■■■■ FIN HEADER ■■■■■■■■■■■■■■■■■■■■■■ │ */
+/* └─────────────────────────────────────────────────────────┘ */
+
+
+
+/* ┌─────────────────────────────────────────────────────────┐ */
+/* │ ■■■■■■■■■■■■■■■■■ INICIO PRE-DONATE ■■■■■■■■■■■■■■■■■■■ │ */
+/* │                                                         │ */
+/* │   COLABORADORES:                                        │ */
+/* │ ► Diego N. Cabrera                                      │ */
+/* └─────────────────────────────────────────────────────────┘ */
+
+
+.pre-donate {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin-top: 20px;
+}
+
+/* ┌─────────────────────────────────────────────────────────┐ */
+/* │ ■■■■■■■■■■■■■■■■■■■ FIN PRE-DONATE ■■■■■■■■■■■■■■■■■■■■ │ */
+/* └─────────────────────────────────────────────────────────┘ */
+
+
+
+/* ┌─────────────────────────────────────────────────────────┐ */
+/* │ ■■■■■■■■■■■■■■■■■■ INICIO CONTENIDO ■■■■■■■■■■■■■■■■■■■ │ */
+/* │                                                         │ */
+/* │   COLABORADORES:                                        │ */
+/* │ ► Manuel Florez                                         │ */
+/* └─────────────────────────────────────────────────────────┘ */
+
+.content-container {
+    margin-bottom: 25px;
+}
+
+.ongs-legend {
+    color: var(--color-dos);
+    font-family: var(--font-family-lato);
+    font-weight: 600;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.3rem;
+}
+
+.ongs-legend-span {
+    font-weight: 800;
+}
+
+.list-group-title {
+    color: var(--color-dos);
+    font-family: var(--font-family-lato);
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.list-group {
+    border-radius: unset;
+}
+
+.list-group-item {
+    border-radius: unset;
+    border: 1.5px solid var(--color-dos);
+    padding: 0;
+}
+
+.ONG_element {
+    display: flex;
+    flex-direction: row;
+    padding: var(--bs-list-group-item-padding-y) var(--bs-list-group-item-padding-x);
+}
+
+.ONG_element_title {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    font-size: 1.4rem;
+    font-weight: 200;
+    color: var(--color-dos);
+}
+
+.ONG_element_title_arrow {
+    margin-left: auto;
+    color: var(--color-dos);
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.ONG_element_collapse {
+    background-color: var(--color-dos);
+    color: white;
+    padding: 0;
+}
+
+.ONG_element_collapse .ONG_element_collapse_title {
+    font-size: 1.4rem;
+    padding: var(--bs-list-group-item-padding-y) var(--bs-list-group-item-padding-x);
+    padding-bottom: 0px;
+    margin: 3px;
+}
+
+.ONG_element_collapse_info {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 4px;
+}
+
+.ONG_element_collapse_info .ONG_element_collapse_info_item {
+    display: grid;
+    place-items: center;
+    width: 150px;
+    height: 60px;
+}
+
+.ONG_element_collapse_info .ONG_element_collapse_info_img {
+    background-color: white;
+    color: var(--color-dos);
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.ONG_element_collapse_info .ONG_element_collapse_info_item .ONG_element_collapse_info_item_btn {
+    background-color: var(--color-tres);
+    color: var(--color-dos);
+}
+
+/* ┌─────────────────────────────────────────────────────────┐ */
+/* │ ■■■■■■■■■■■■■■■■■■■■ FIN CONTENIDO ■■■■■■■■■■■■■■■■■■■■ │ */
+/* └─────────────────────────────────────────────────────────┘ */
+
+
+/*
+    ╔═════════════════════════════════════════════════════════════════════╗
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ████████████████████████ MEDIA QUERY MOBILE ███████████████████████ ║
+    ║ ████████████████████████████ 320 - 480  ███████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ╚═════════════════════════════════════════════════════════════════════╝
+*/
+
+@media (min-width: 320px ) and (max-width: 480px) {
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO HEADER ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Diego N. Cabrera                                      │ */
+    /* │ ► Luis Romano                                           │ */
+    /* │ ► Federico Peralta                                      │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+    /*  Header - Sección Navbar  */
+
+    header {
+        height: auto;
+    }
+
+    /* Header - Títulos */
+
+    .header-titulo {
+        width: 80%;
+    }
+
+    .header-subtitulo {
+        width: 73%;
+    }
+    
+    /* Header - Opciones */
+
+    .option-donate {
+        background-color: var(--color-tres);
+        color: var(--color-cinco);
+        font-weight: 700;
+    }
+
+    /* Header - Sección Donaciones */
+
+    .boton-qr{
+        border-radius: 50%;
+        margin-top: 0px;
+        margin-left: 30px;
+        width: 18%;
+        height: 18%;
+    }
+
+    .imagen-qr-mobile{
+        margin-left: 25%;
+        width: 45%;
+        height: 45%;
+        margin-top: 0px;
+        margin-bottom: -40%;
+    }
+
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN HEADER ■■■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■ INICIO PRE-DONATE ■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Diego N. Cabrera                                      │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+
+    .pre-donate {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+        padding: 0;
+        margin: auto;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■ FIN PRE-DONATE ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+}
+
+
+
+/*
+    ╔═════════════════════════════════════════════════════════════════════╗
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ████████████████████████ MEDIA QUERY TABLET ███████████████████████ ║
+    ║ ████████████████████████████ 481 - 992  ███████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ╚═════════════════════════════════════════════════════════════════════╝
+*/
+
+@media (min-width: 481px ) and (max-width: 992px) {
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO HEADER ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Diego N. Cabrera                                      │ */
+    /* │ ► Luis Romano                                           │ */
+    /* │ ► Federico Peralta                                      │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+    /*  Header - Sección Navbar  */
+
+    header {
+        height: 1250px;
+    }
+
+    /* Header - Sección Títulos */
+
+    .header-titulo {
+        width: 100%;
+        overflow-x: hidden;
+        white-space: nowrap;
+    }
+    
+    .header-subtitulo {
+        width: 420px;
+    }
+
+    /* Header - Sección Donaciones */
+
+    .boton-qr {
+        border-radius: 50%;
+        margin-top: 150px;
+        margin-left: 0;
+        margin-right: 50px;
+        width: 80px;
+        height: 80px;
+    }
+    
+    .imagen-qr {
+        display: block;
+        margin: auto;
+        width: 270px;
+        height: 270px;
+        margin-top: 210px;
+    }
+
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■■ FIN HEADER ■■■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■ INICIO CONTENIDO ■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Manuel Florez                                         │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+    .ongs-legend-span {
+        font-weight: 900;
+    }
+
+    .ONG_element_collapse_info .ONG_element_collapse_info_item {
+        width: 200px;
+        height: 80px;
+    }
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■ FIN CONTENIDO ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+}
+
+
+
+/*
+    ╔═════════════════════════════════════════════════════════════════════╗
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████ MEDIA QUERY DESKTOP ███████████████████████ ║
+    ║ ███████████████████████████ 993 - 1299  ███████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ╚═════════════════════════════════════════════════════════════════════╝
+*/
+
+@media(min-width: 993px) and (max-width: 1299px) {
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■ INICIO CONTENIDO ■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Manuel Florez                                         │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+    .ongs-legend {
+        font-size: 1.8rem;
+    }
+
+    .list-group {
+        border-radius: 1.5rem;
+    }
+
+    .list-group-item {
+        border: 2px solid var(--color-dos) !important;
+        border-radius: 1.1rem;
+        overflow: hidden;
+        height: fit-content;
+        margin-bottom: 1rem;
+    }
+
+    .ONG_element_title{
+        margin-top: 3px;
+        margin-bottom: 3px;
+        font-weight: 400;
+    }
+
+    .ONG_element_collapse_info {
+        padding: 6px;
+    }
+
+    .ONG_element_collapse_info .ONG_element_collapse_info_item {
+        width: 300px;
+        height: 90px;
+    }
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■ FIN CONTENIDO ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+}
+
+
+
+/*
+    ╔═════════════════════════════════════════════════════════════════════╗
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ██████████████████████ MEDIA QUERY DESKTOP HD █████████████████████ ║
+    ║ ████████████████████████████ 1300 - ∞  ████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ╚═════════════════════════════════════════════════════════════════════╝
+*/
+
+@media(min-width: 1300px) {
+
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■ INICIO CONTENIDO ■■■■■■■■■■■■■■■■■■■ │ */
+    /* │                                                         │ */
+    /* │   COLABORADORES:                                        │ */
+    /* │ ► Manuel Florez                                         │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+    .ongs-legend {
+        font-size: 1.8rem;
+    }
+
+    .list-group {
+        border-radius: 1.5rem;
+    }
+
+    .list-group-item {
+        border: 2px solid var(--color-dos) !important;
+        border-radius: 1.5rem;
+        overflow: hidden;
+        height: fit-content;
+        margin-bottom: 1rem;
+    }
+
+    .ONG_element_title{
+        margin-top: 3px;
+        margin-bottom: 3px;
+        font-weight: 400;
+    }
+
+    .ONG_element_collapse_info {
+        padding: 6px;
+    }
+
+    .ONG_element_collapse_info .ONG_element_collapse_info_item {
+        width: 300px;
+        height: 90px;
+    }
+    
+    /* ┌─────────────────────────────────────────────────────────┐ */
+    /* │ ■■■■■■■■■■■■■■■■■■■■ FIN CONTENIDO ■■■■■■■■■■■■■■■■■■■■ │ */
+    /* └─────────────────────────────────────────────────────────┘ */
+
+}
+
+
+/*
+    ╔═════════════════════════════════════════════════════════════════════╗
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ║ ██████████████████████████ Extra Querys ███████████████████████████ ║
+    ║ ███████████████████████████████████████████████████████████████████ ║
+    ╚═════════════════════════════════════════════════════════════════════╝
+*/
+
+@media(min-width: 1450px) {
+    /* Header - Sección Donaciones */
+
+    .imagen-qr {
+        margin-left: 17%;
+        width: 30%;
+        height: 30%;
+        max-width: 400px;
+        max-height: 400px;
+        margin-top: -340px;
+    }
+}
