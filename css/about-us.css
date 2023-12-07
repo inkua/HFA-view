@@ -44,32 +44,134 @@ header {
     text-align: justify;
     height: auto;
     padding: 0px 40px;
+
 }
 
 .about-us-main-img {
     display: flex;
-    max-width: 100%;
+    max-width: 90%;
     margin-bottom: 50px;
     border-radius: 10px;
 }
 
 
+/*La regla @media screen permite generar diferentes dispocion segun el tamño de la pantall*/
+
+
+/*posicion en mobile*/
+@media screen and (max-width: 480px) {
+    .position-of-image1 {
+        position: relative;
+        width: 90%;
+        margin-left: 10%;
+        margin-top: 10%;
+
+    }
+
+    .about-us-text1 {
+        margin-bottom: 30px;
+        margin-top: 10%;
+        left: 50%;
+
+    }
+    .about-us-text1 .AU-paragraph{
+        margin: 0 0 1rem 0;
+        padding: 0;
+        font-size: 1.1rem;
+    }
+    
+    .history-titulo {
+        color: var(--color-dos);
+        font-family: var(--font-family-lato);
+        font-weight: 570;
+        margin-bottom: 5%;
+        font-size: 200%;
+        margin-left: 13%;
+    }
+    
+    .position-of-image2 {
+        position: relative;
+        width: 90%;
+        margin-left: 10%;
+        
+    }
+    
+    .about-us-text2 {
+        margin-bottom: 30px;
+        margin-top: 0px;
+        left: 50%;
+    }
+    .about-us-text2 .AU-paragraph {
+        margin: 0 0 1rem 0;
+        padding: 0;
+        font-size: 1.1rem;
+    }
+}
+
+/*posicion en desktop*/
+/* @media screen and (min-width: 481px) {
+    .position-of-image1 {
+        position: relative;
+        margin-bottom: 5%;
+        margin-top: 50px;
+        left: 45%;
+        right: auto;
+    }
+
+    .about-us-text1 {
+        position: relative;
+        font-size: 120%;
+        margin-bottom: 5%;
+        margin-top: 50px;
+        left: auto;
+        right: 45%;
+        margin-left: 10%;
+
+
+    }
+
+    .history-titulo {
+        color: var(--color-dos);
+        font-family: var(--font-family-lato);
+        font-weight: 570;
+        margin-bottom: 2%;
+
+        margin-left: 10%;
+    }
+
+    .position-of-image2 {
+        position: relative;
+        margin-bottom: 0%;
+        margin-top: 0%;
+        left: auto;
+        right: 45%;
+        margin-left: 12%;
+
+    }
+
+    .about-us-text2 {
+
+        position: relative;
+        font-size: 120%;
+        margin-bottom: 0%;
+        margin-top: 0%;
+        left: 45%;
+        right: auto;
+    }
+
+} */
+
 .about-us-main {
-    margin-bottom: 100px;
-   
+    margin-bottom: 20px;
+
 }
 
 .about-us-history-img {
     max-width: 150%;
 }
 
-.history-titulo {
-    color: var(--color-dos);
-    font-family: var(--font-family-lato);
-    font-weight: 570;
-    margin-bottom: 50px;
-}
-    
+
+
 /* ┌─────────────────────────────────────────────────────────┐ */
 /* │ ■■■■■■■■■■■■■■■■■■■■ FIN ABOUT-US ■■■■■■■■■■■■■■■■■■■■■ │ */
 /* └─────────────────────────────────────────────────────────┘ */
@@ -86,7 +188,7 @@ header {
     ╚═════════════════════════════════════════════════════════════════════╝
 */
 
-@media (min-width: 320px ) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
 
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO HEADER ■■■■■■■■■■■■■■■■■■■■ │ */
@@ -128,31 +230,22 @@ header {
     /* │ ► Luis Fernando Callisaya Surco                         │ */
     /* └─────────────────────────────────────────────────────────┘ */
 
+
+
     .about-us-main p {
         font-size: 90%;
-        /* padding: 0; */
-
     }
 
     .about-us-main {
         margin-left: 0px;
-        margin-right: 0px; 
-    }
-
-    .history-titulo {
-        font-size: 250%;
-        margin-bottom: 30px;
-    }
-
-    .about-us-text {
-        font-size: 120%;
-        margin-bottom: 30px;
-        margin-top: 50px       
+        margin-right: 0px;
     }
 
     .about-us-main-img {
         margin-bottom: 20px;
     }
+
+
 
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■■■ FIN ABOUT-US ■■■■■■■■■■■■■■■■■■■■■ │ */
@@ -173,7 +266,7 @@ header {
     ╚═════════════════════════════════════════════════════════════════════╝
 */
 
-@media (min-width: 481px ) and (max-width: 992px) {
+@media (min-width: 481px) and (max-width: 992px) {
 
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■■■ INICIO HEADER ■■■■■■■■■■■■■■■■■■■■ │ */
@@ -208,20 +301,91 @@ header {
         margin-right: 10px;
     }
 
-    .about-us-text {
-        margin-bottom: 30px;
-        margin-top: 50px;
-    }
-
     .history-titulo {
         font-size: 250%;
     }
 
     .about-us-main-img {
-        margin-bottom: 30px;
+        margin-bottom: 0px;
     }
+    .position-of-image1{
+        width: 100%;
+        margin: 0 0 2rem 0 ;
+        padding: 0px 40px 0px 40px;
+        display: flex;
+        justify-content: center;
+    }
+    .about-us-text1{
+        padding: 0;
+    }
+    .about-us-text2{
+        padding: 0;
+    }
+    .position-of-image2{
+        width: 100%;
+        margin: 0 0 1rem 0 ;
+        padding: 0px 40px 0px 40px;
+        justify-content: flex-end;
+    }
+
+
+
 
     /* ┌─────────────────────────────────────────────────────────┐ */
     /* │ ■■■■■■■■■■■■■■■■■■■■ FIN ABOUT-US ■■■■■■■■■■■■■■■■■■■■■ │ */
     /* └─────────────────────────────────────────────────────────┘ */
+}
+
+@media (min-width: 768px) {
+    .about-us-main{
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+    .about-us-main-img{
+        width: auto;
+    }
+
+    .position-of-image1{
+        width: 368px;
+        height: auto;
+        margin: 0 ;
+        padding: 0px;
+        display: flex;
+    }
+    .about-us-text1{
+        font-size: 0.8rem;
+        margin: 0;
+        padding: 0;
+    }
+    .about-us-text1 .AU-paragraph{
+        margin: 0 0 2rem 0;
+        padding: 0;
+    }
+    
+    .about-us-text2{
+        font-size: 0.8rem;
+        margin: 0;
+        padding: 0;
+    }
+    .about-us-text2 .AU-paragraph{
+        margin: 0 0 2rem 0;
+        padding: 0;
+    }
+
+
+    .position-of-image2{
+        width: 368px;
+        height: auto;
+        margin: 0 ;
+        padding: 0px;
+        display: flex;
+    }
+}
+@media (min-width: 1550px) {
+    .position-of-image1{
+        width: max-content;
+    }
+    .position-of-image2{
+        width: max-content;
+    }
 }
